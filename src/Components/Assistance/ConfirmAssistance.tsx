@@ -1,7 +1,6 @@
 import SectionText from '../General/SectionText';
 import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 import Tarjets from '../Tarjets/Tarjets';
-import FormAssistance from '../General/Modals/Forms';
 
 const ConfirmAssistance = () => {
   return (

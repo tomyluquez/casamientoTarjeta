@@ -15,9 +15,6 @@
 .inputCustom {
   background-color: transparent;
   border-bottom: 1px solid;
-  :focus {
-    outline: none !important;
-  }
 }
 
 .inputCustom::placeholder {

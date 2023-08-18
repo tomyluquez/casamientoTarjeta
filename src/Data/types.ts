@@ -1,5 +1,12 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { ReactElement } from "react";
+
+export interface PropsDialog{
+    open: boolean;
+    setOpen: (arg: boolean) => void;
+    text: string;
+    intro: string;
+    form?: string; 
+}
 
 export interface TypeofCeremoni{
     type: string;

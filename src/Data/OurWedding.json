@@ -1,0 +1,22 @@
+{
+    "Wedding": [
+        {
+            "type": "Ceremonia",
+            "date": "2024-03-03",
+            "hours": "16:00",
+            "place": "Iglesia: Nuestra señora del carmen",
+            "city": "Villa allende, Cordoba",
+            "image" : "./iglesia.png",
+            "address": "https://www.google.com/maps/place/Tres+Aguas/@-31.3225971,-64.3122341,17z/data=!3m1!4b1!4m6!3m5!1s0x94329db9c0ac9445:0xa90b4460d1e585c3!8m2!3d-31.3226018!4d-64.3073632!16s%2Fg%2F11b8y7_n0d?entry=ttu"
+        },
+        {
+            "type": "Festejo",
+            "date": "2024-03-03",
+            "hours": "18:00",
+            "place": "Salon: Tres aguas",
+            "city": "Saldan, Cordoba",
+            "image" : "./fiesta.png",
+            "address": "https://www.google.com/maps/place/Tres+Aguas/@-31.3225971,-64.3122341,17z/data=!3m1!4b1!4m6!3m5!1s0x94329db9c0ac9445:0xa90b4460d1e585c3!8m2!3d-31.3226018!4d-64.3073632!16s%2Fg%2F11b8y7_n0d?entry=ttu"
+        }
+    ]
+}

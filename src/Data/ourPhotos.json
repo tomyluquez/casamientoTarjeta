@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "image": "./our1.jpg",
+            "id": 1
+        },
+        {
+            "image": "./our2.jpg",
+            "id": 2
+        },
+        {
+            "image": "./our3.jpg",
+            "id": 3
+        },
+        {
+            "image": "./our4.jpg",
+            "id": 4
+        },
+        {
+            "image": "./our5.jpg",
+            "id": 5
+        },
+        {
+            "image": "./our6.jpg",
+            "id": 6
+        },
+        {
+            "image": "./our7.jpg",
+            "id": 7
+        },
+        {
+            "image": "./our8.jpg",
+            "id": 8
+        },
+        {
+            "image": "./our9.jpg",
+            "id": 9
+        }
+    ]
+}

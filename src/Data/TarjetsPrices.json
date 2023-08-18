@@ -1,0 +1,66 @@
+{
+    "adults": [
+        {
+            "id": 1,
+            "month" : "Septiembre",
+            "price": 26000
+        },
+        {
+            "id": 2,
+            "month" : "Octubre",
+            "price": 28500
+        },
+        {
+            "id": 3,
+            "month" : "Noviembre",
+            "price": 31500
+        },
+        {
+            "id": 4,
+            "month" : "Diciembre",
+            "price": 34500
+        },
+        {
+            "id": 5,
+            "month" : "Enero",
+            "price": 38000
+        },
+        {
+            "id": 6,
+            "month" : "Febrero",
+            "price": 42000
+        }
+    ],
+    "kids": [
+        {
+            "id": 1,
+            "month" : "Septiembre",
+            "price": 6900
+        },
+        {
+            "id": 2,
+            "month" : "Octubre",
+            "price": 7500
+        },
+        {
+            "id": 3,
+            "month" : "Noviembre",
+            "price": 8500
+        },
+        {
+            "id": 4,
+            "month" : "Diciembre",
+            "price": 9200
+        },
+        {
+            "id": 5,
+            "month" : "Enero",
+            "price": 10000
+        },
+        {
+            "id": 6,
+            "month" : "Febrero",
+            "price": 11500
+        }
+    ]
+}

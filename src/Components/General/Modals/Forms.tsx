@@ -5,10 +5,13 @@ import TarjetsPrices from '../../Tarjets/TarjetsPrices';
 import PresentsPrices from '../../Tarjets/PresentsPrices';
 import ButtonCustom from '../Buttons/ButtonCustom';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { confirmAssitence } from './../../../Services/confirmAssitence';
 
 type Inputs = {
   example: string;
   exampleRequired: string;
+  nameLastname: string;
+  alimentation: string;
 };
 
 interface FormsProps {
@@ -22,7 +25,14 @@ export default function Forms({ close, type }: FormsProps) {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    confirmAssitence({
+      nombreInvitado: data.nameLastname,
+      restricciones: data.alimentation,
+    }).then((res: object) => {
+      console.log(res);
+    });
+  };
 
   return (
     <form

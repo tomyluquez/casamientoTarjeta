@@ -21,9 +21,13 @@ const theme = createTheme({
 
 export const alertContext = createContext({
   open: false,
-  setOpen: (value: boolean) => {},
+  setOpen: (value: boolean) => {
+    console.log(value);
+  },
   text: '',
-  setText: (value: string) => {},
+  setText: (value: string) => {
+    console.log(value);
+  },
 });
 
 function App() {

@@ -6,13 +6,22 @@ import PresentsPrices from '../../Tarjets/PresentsPrices';
 import ButtonCustom from '../Buttons/ButtonCustom';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { confirmAssitence } from './../../../Services/confirmAssitence';
+import { createSong } from '../../../Services/createSong';
+import { useContext, useState } from 'react';
+import Loading from '../Loading';
+import { alertContext } from '../../../App';
 
 type Inputs = {
   example: string;
   exampleRequired: string;
   nameLastname: string;
   alimentation: string;
+  music: string;
 };
+
+interface ApiResponse {
+  status: number;
+}
 
 interface FormsProps {
   close: () => void;
@@ -20,63 +29,89 @@ interface FormsProps {
 }
 
 export default function Forms({ close, type }: FormsProps) {
+  const [loading, setLoading] = useState(false);
+  const { setOpen, setText } = useContext(alertContext);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    confirmAssitence({
-      nombreInvitado: data.nameLastname,
-      restricciones: data.alimentation,
-    }).then((res: object) => {
-      console.log(res);
-    });
+    setLoading(true);
+    if (data.nameLastname) {
+      confirmAssitence({
+        nombreInvitado: data.nameLastname,
+        restricciones: data.alimentation,
+      }).then((res: ApiResponse) => {
+        if (res.status === 200) {
+          close();
+          setLoading(false);
+          setOpen(true);
+          setText('Que bueno que puedas asisitir ! ahi nos vemos');
+        }
+      });
+    }
+
+    if (data.music) {
+      createSong({
+        nameSong: data.music,
+      }).then((res: ApiResponse) => {
+        if (res.status === 200) {
+          close();
+          setLoading(false);
+          setOpen(true);
+          setText('Gracias por recomendarnos la cancion ! ');
+        }
+      });
+    }
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col justify-center align-center gap-8 mt-8"
-    >
-      {type === 'formAssitance' && (
-        <>
+    <>
+      {loading && <Loading />}
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col justify-center align-center gap-8 mt-8"
+      >
+        {type === 'formAssitance' && (
+          <>
+            <InputText
+              label="Nombre y Apellido"
+              register={register}
+              errors={errors}
+              name="nameLastname"
+              placeholder="Nombre y Apellido"
+              error="El campo es obligatorio"
+            />
+            <InputText
+              label="Tenes alguna restricción alimenticia?"
+              register={register}
+              errors={errors}
+              name="alimentation"
+              placeholder="Ej: Vegetariano/a"
+              error="En caso de no tener ninguna restriccion poner NO"
+            />
+          </>
+        )}
+        {type === 'formMusic' && (
           <InputText
-            label="Nombre y Apellido"
+            label="Nombre de la cancion y Artista"
             register={register}
             errors={errors}
-            name="nameLastname"
-            placeholder="Nombre y Apellido"
+            name="music"
+            placeholder="Ej: Universo paralelo - La konga"
             error="El campo es obligatorio"
           />
-          <InputText
-            label="Tenes alguna restricción alimenticia?"
-            register={register}
-            errors={errors}
-            name="alimentation"
-            placeholder="Ej: Vegetariano/a"
-            error="En caso de no tener ninguna restriccion poner NO"
-          />
-        </>
-      )}
-      {type === 'formMusic' && (
-        <InputText
-          label="Nombre de la cancion y Artista"
-          register={register}
-          errors={errors}
-          name="music"
-          placeholder="Ej: Universo paralelo - La konga"
-          error="El campo es obligatorio"
-        />
-      )}
-      {type === 'tarjetPrices' && <TarjetsPrices />}
-      {type === 'presentsPrices' && <PresentsPrices />}
-      <DialogActions>
-        <ButtonCustom icon={faXmark} text="Cerrar" onClick={close} />
-        {(type === 'formAssitance' || type === 'formMusic') && (
-          <ButtonCustom type="submit" icon={faCheck} text="Confirmar" />
         )}
-      </DialogActions>
-    </form>
+        {type === 'tarjetPrices' && <TarjetsPrices />}
+        {type === 'presentsPrices' && <PresentsPrices />}
+        <DialogActions>
+          <ButtonCustom icon={faXmark} text="Cerrar" onClick={close} />
+          {(type === 'formAssitance' || type === 'formMusic') && (
+            <ButtonCustom type="submit" icon={faCheck} text="Confirmar" />
+          )}
+        </DialogActions>
+      </form>
+    </>
   );
 }

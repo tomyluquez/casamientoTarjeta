@@ -4,7 +4,7 @@ interface propsConfirmAssitence {
 }
 
 export const confirmAssitence = ({nombreInvitado, restricciones} :propsConfirmAssitence) : Promise<any> => {
-  return fetch('https://celi-tomi-casamiento.vercel.app/api/invitados', {
+  return fetch('https://casamientoback.onrender.com/api/invitados', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

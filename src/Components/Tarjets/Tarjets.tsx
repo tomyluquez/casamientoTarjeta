@@ -3,7 +3,7 @@ import SectionText from '../General/SectionText';
 
 const Tarjets = () => {
   return (
-    <div className="mt-12">
+    <div>
       <SectionText
         description={'Te compartimos los valores de la tarjeta'}
         buttonText="Ver mas"

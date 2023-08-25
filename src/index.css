@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding: 0 !important;
+}
+
 .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
   background-color: #eadbc8 !important;
 }
@@ -132,4 +136,13 @@
   100% {
     transform: scale(1); /* Volver al tamaño normal al final */
   }
+}
+
+.alert-success {
+  transition: all 0.3s ease-in-out;
+}
+
+.alert-closed {
+  top: -100%;
+  transition: all 0.3s ease-in-out;
 }

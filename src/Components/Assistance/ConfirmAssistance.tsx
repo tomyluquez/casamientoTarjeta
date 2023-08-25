@@ -5,6 +5,7 @@ import Tarjets from '../Tarjets/Tarjets';
 const ConfirmAssistance = () => {
   return (
     <div className="bg-timer py-12">
+      <Tarjets />
       <SectionText
         description={
           'Nos encantaria poder contar con vos en esta fecha y que nos acompañes !'
@@ -18,7 +19,6 @@ const ConfirmAssistance = () => {
       <p className="text-center text-gray text-sm">
         la confirmacion es por persona
       </p>
-      <Tarjets />
     </div>
   );
 };

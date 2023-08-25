@@ -7,6 +7,8 @@ import SectionTarPre from './Components/Tarjets/SectionTarPre';
 import OurPhotos from './Components/Photos/OurPhotos';
 import Footer from './Components/Footer/Footer';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createContext, useState } from 'react';
+import Success from './Components/General/Success';
 
 const theme = createTheme({
   palette: {
@@ -17,17 +19,29 @@ const theme = createTheme({
   },
 });
 
+export const alertContext = createContext({
+  open: false,
+  setOpen: (value: boolean) => {},
+  text: '',
+  setText: (value: string) => {},
+});
+
 function App() {
+  const [open, setOpen] = useState(false);
+  const [text, setText] = useState('');
   return (
     <ThemeProvider theme={theme}>
-      <ImagePpal />
-      <CountdownTimer />
-      <DateMain />
-      <ConfirmAssistance />
-      <Music />
-      <SectionTarPre />
-      <OurPhotos />
-      <Footer />
+      <alertContext.Provider value={{ open, setOpen, text, setText }}>
+        <Success />
+        <ImagePpal />
+        <CountdownTimer />
+        <DateMain />
+        <ConfirmAssistance />
+        <Music />
+        <SectionTarPre />
+        <OurPhotos />
+        <Footer />
+      </alertContext.Provider>
     </ThemeProvider>
   );
 }

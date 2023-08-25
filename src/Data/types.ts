@@ -1,5 +1,32 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
+export interface propsAlert {
+    openAlert?: {
+      open: boolean;
+      text: string;
+      icon: string;
+    };
+    setOpenAlert: React.Dispatch<
+      React.SetStateAction<{
+        open: boolean;
+        text: string;
+        icon: string;
+      }>
+    >;
+  }
+
+  type setOpenAlertAction = {
+    open: boolean;
+    text: string;
+    icon: string;
+  }
+
+  type openAlert = {
+    open: boolean;
+    text: string;
+    icon: string;
+  }
+
 export interface PropsDialog{
     open: boolean;
     setOpen: (arg: boolean) => void;
@@ -35,4 +62,6 @@ export interface PropsSectionText {
       titleModal: string
       textModal: string
       form? : string
+      setOpenAlert?: setOpenAlertAction
+      openAlert? : openAlert
 }

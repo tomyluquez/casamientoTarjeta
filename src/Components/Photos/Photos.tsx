@@ -1,9 +1,9 @@
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import { TypeofPhotos } from '../../Data/types';
+import { ModalProps, TypeofPhotos } from '../../Data/types';
 import ourPhotosJson from '../../Data/ourPhotos.json';
 
-const Photos = () => {
+const Photos = ({ setOpen }: ModalProps) => {
   const itemData: TypeofPhotos[] = ourPhotosJson.data.map((photo) => photo);
   return (
     <ImageList
@@ -14,7 +14,12 @@ const Photos = () => {
     >
       {itemData.map((item) => (
         <ImageListItem key={item.id}>
-          <img src={item.image} loading="lazy" className="drop-shadow-2xl	" />
+          <img
+            src={item.image}
+            loading="lazy"
+            className="drop-shadow-2xl cursor-zoom-in"
+            onClick={() => setOpen(item.id)}
+          />
         </ImageListItem>
       ))}
     </ImageList>

@@ -42,27 +42,41 @@ export default function Forms({ close, type }: FormsProps) {
       confirmAssitence({
         nombreInvitado: data.nameLastname,
         restricciones: data.alimentation,
-      }).then((res: ApiResponse) => {
-        if (res.status === 200) {
+      })
+        .then((res: ApiResponse) => {
+          if (res.status === 200) {
+            close();
+            setLoading(false);
+            setOpen(true);
+            setText('Que bueno que puedas asisitir ! ahi nos vemos');
+          }
+        })
+        .catch(() => {
           close();
           setLoading(false);
           setOpen(true);
-          setText('Que bueno que puedas asisitir ! ahi nos vemos');
-        }
-      });
+          setText('Algo salio mal !, por favor intenta nuevamente');
+        });
     }
 
     if (data.music) {
       createSong({
         nameSong: data.music,
-      }).then((res: ApiResponse) => {
-        if (res.status === 200) {
+      })
+        .then((res: ApiResponse) => {
+          if (res.status === 200) {
+            close();
+            setLoading(false);
+            setOpen(true);
+            setText('Gracias por recomendarnos la cancion !');
+          }
+        })
+        .catch(() => {
           close();
           setLoading(false);
           setOpen(true);
-          setText('Gracias por recomendarnos la cancion ! ');
-        }
-      });
+          setText('Algo salio mal !, por favor intenta nuevamente');
+        });
     }
   };
 

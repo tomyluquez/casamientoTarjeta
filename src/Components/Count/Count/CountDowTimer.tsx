@@ -32,7 +32,7 @@ const CountdownTimer = () => {
         {timeLeft.map((time, i) => (
           <div
             key={i}
-            className="countdown-item tablet:h-[200px] h-[90px] tablet:w-[200px] w-[90px]"
+            className="countdown-item tablet:h-[200px] h-[85px] tablet:w-[200px] w-[85px]"
           >
             <span className="countdown-value tablet:text-5xl">
               {time.time > 0 ? time.time : 0}

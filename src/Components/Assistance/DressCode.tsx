@@ -8,10 +8,7 @@ const DressCode = () => {
         style={{ width: '100px' }}
       />
       <h4 className="text-4xl font-title">Dress Code</h4>
-      <p>
-        Formal elegante. Nuestro casamiento será al aire libre, sugerimos no
-        usar taco y llevar abrigo.
-      </p>
+      <p>Formal elegante.</p>
     </div>
   );
 };

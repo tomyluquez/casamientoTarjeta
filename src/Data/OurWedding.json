@@ -3,11 +3,11 @@
         {
             "type": "Ceremonia",
             "date": "2024-03-03",
-            "hours": "16:00",
-            "place": "Iglesia: Nuestra señora del carmen",
+            "hours": "16:30",
+            "place": "Iglesia: Comunidad Mercedaria León XIII",
             "city": "Villa allende, Cordoba",
             "image" : "./iglesia.png",
-            "address": "https://www.google.com/maps/place/Tres+Aguas/@-31.3225971,-64.3122341,17z/data=!3m1!4b1!4m6!3m5!1s0x94329db9c0ac9445:0xa90b4460d1e585c3!8m2!3d-31.3226018!4d-64.3073632!16s%2Fg%2F11b8y7_n0d?entry=ttu"
+            "address": "https://www.google.com/maps/place/Comunidad+Mercedaria+Le%C3%B3n+XIII/@-31.3299294,-64.2888557,17z/data=!3m1!4b1!4m6!3m5!1s0x94329c35ac6d707b:0x6b29d49749bdd799!8m2!3d-31.329934!4d-64.2862808!16s%2Fg%2F11b8_mx5lm?entry=ttu"
         },
         {
             "type": "Festejo",

@@ -4,7 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ArrowDown = () => {
   return (
     <div className="mb-24">
-      <FontAwesomeIcon className="arrow-icon" icon={faChevronDown} />
+      <FontAwesomeIcon
+        className="arrow-icon"
+        icon={faChevronDown}
+        style={{ color: '#fafafa' }}
+      />
     </div>
   );
 };

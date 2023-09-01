@@ -4,10 +4,10 @@ import ArrowDown from './ArrowDown';
 const ImagePpal = () => {
   return (
     <Parallax
-      bgImage="./fondo.png"
+      bgImage="portada.png"
       strength={300}
       bgImageStyle={{
-        width: '1450px',
+        width: 'auto',
         height: '100vh',
         position: 'absolute',
         maxWidth: 'none',

@@ -16,8 +16,10 @@ const Music = () => {
       bgImage="./fondoMusic.png"
       strength={300}
       bgImageStyle={{
+        width: 'auto',
         height: '100vh',
         position: 'absolute',
+        maxWidth: 'none',
       }}
     >
       <FormDialog
@@ -46,10 +48,10 @@ const Music = () => {
         <p>
           ¿Qué canciones no pueden faltar en la fiesta?
           <br />
-          <b>¡Queremos crear una lista inolvidable!</b>
+          <b>¡Queremos verte dándolo todo en la pista!</b>
         </p>
         <ButtonCustom
-          text="Sugerir Canciones"
+          text="Recomendanos tu canción"
           icon={faMusic}
           onClick={handlerMusic}
         />

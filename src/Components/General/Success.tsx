@@ -16,7 +16,7 @@ const Success = () => {
 
   return (
     <div
-      className={`bg-white border-2 border-orange p-4 text-blanco rounded-lg fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+      className={`bg-button border-2 border-white p-4 w-[80%] tablet:w-[30%] rounded-lg fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
         open ? 'alert-success' : 'alert-closed'
       }`}
     >

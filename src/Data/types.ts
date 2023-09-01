@@ -65,3 +65,8 @@ export interface PropsSectionText {
       setOpenAlert?: setOpenAlertAction
       openAlert? : openAlert
 }
+
+export interface ModalProps {
+  open?: number | boolean;
+  setOpen: (value: number | boolean) => void;
+}

@@ -3,32 +3,32 @@
         {
             "id": 1,
             "month" : "Septiembre",
-            "price": 26000
+            "price": 25500
         },
         {
             "id": 2,
             "month" : "Octubre",
-            "price": 28500
+            "price": 28000
         },
         {
             "id": 3,
             "month" : "Noviembre",
-            "price": 31500
+            "price": 30500
         },
         {
             "id": 4,
             "month" : "Diciembre",
-            "price": 34500
+            "price": 33000
         },
         {
             "id": 5,
             "month" : "Enero",
-            "price": 38000
+            "price": 35500
         },
         {
             "id": 6,
             "month" : "Febrero",
-            "price": 42000
+            "price": 38000
         }
     ],
     "kids": [

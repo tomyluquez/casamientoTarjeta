@@ -17,11 +17,6 @@ const TarjetsPrices = () => {
           Valor de la tarjeta Menores (2 - 12 años): Consultar precios
         </strong>
       </div>
-      {/* <Cbu
-        titular="Tomas Luquez"
-        alias="tren.pelo.estimo.mp"
-        cbu="0000003100067349638299"
-      /> */}
       <p>
         Enviar comprobante a <br />
         <a href="http://wa.me/543512118497" target="_blank">

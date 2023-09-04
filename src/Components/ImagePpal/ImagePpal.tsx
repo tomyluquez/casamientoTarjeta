@@ -1,19 +1,34 @@
 import { Parallax } from 'react-parallax';
 import ArrowDown from './ArrowDown';
+import { useEffect, useState } from 'react';
 
 const ImagePpal = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
   return (
     <Parallax
-      bgImage="portada.png"
+      bgImage={isMobile ? './portadaUs.jpg' : 'portada.png'}
       strength={300}
       bgImageStyle={{
-        width: 'auto',
+        width: isMobile ? '350px' : 'auto',
         height: '100vh',
         position: 'absolute',
         maxWidth: 'none',
       }}
     >
       <div className="h-screen flex flex-col gap-20 justify-end items-center mb-8">
+        {isMobile && (
+          <div className="text-white absolute top-[5px] right-[30px] flex flex-col">
+            <h1 className="text-5xl font-title">Celi y Tomi</h1>
+            <p className="self-end">¡ Nos casamos !</p>
+          </div>
+        )}
         <ArrowDown />
       </div>
     </Parallax>

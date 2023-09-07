@@ -18,7 +18,6 @@ const ImagePpal = () => {
       bgImageStyle={{
         width: isMobile ? '350px' : 'auto',
         height: '100vh',
-        position: 'absolute',
         maxWidth: 'none',
       }}
     >

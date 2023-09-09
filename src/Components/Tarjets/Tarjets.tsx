@@ -17,7 +17,7 @@ const Tarjets = () => {
       />
       <p className="text-center text-gray text-sm">
         <Cbu
-          titular="Tomas"
+          titular="Tomas Luquez"
           alias="tren.pelo.estimo.mp"
           cbu="0000003100067349638299"
         />

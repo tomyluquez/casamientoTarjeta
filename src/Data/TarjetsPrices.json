@@ -23,12 +23,12 @@
         {
             "id": 5,
             "month" : "Enero",
-            "price": 35500
+            "price": 36500
         },
         {
             "id": 6,
             "month" : "Febrero",
-            "price": 38000
+            "price": 40000
         }
     ],
     "kids": [

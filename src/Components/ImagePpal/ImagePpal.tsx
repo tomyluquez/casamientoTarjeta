@@ -17,13 +17,13 @@ const ImagePpal = () => {
       strength={300}
       bgImageStyle={{
         width: isMobile ? '350px' : 'auto',
-        height: '100vh',
+        height: '95%',
         maxWidth: 'none',
       }}
     >
       <div className="h-screen flex flex-col gap-20 justify-end items-center mb-8">
         {isMobile && (
-          <div className="text-white absolute top-[5px] right-[30px] flex flex-col">
+          <div className="text-white absolute bottom-[5px] left-[30px] flex flex-col">
             <h1 className="text-5xl font-title">Celi y Tomi</h1>
             <p className="self-end">¡ Nos casamos !</p>
           </div>

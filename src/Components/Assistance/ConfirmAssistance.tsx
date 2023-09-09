@@ -12,7 +12,7 @@ const ConfirmAssistance = () => {
           buttonText="Confirmar Asistencia"
           iconText={faCalendarCheck}
           titleModal="Confirmar Asistencia"
-          textModal="En caso de no poder asistir no completar este formulario"
+          textModal="La confirmacion es por persona. En caso de no poder asistir no completar este formulario"
           form="formAssitance"
         />
         <p className="text-center text-gray text-sm">

@@ -8,7 +8,7 @@ const ConfirmAssistance = () => {
       <Tarjets />
       <div className="text-center">
         <SectionText
-          description="¡ Gracias por acompañarnos en nuestro gran dia ! Te pedimos que confirmes tu asistencia..."
+          description="¡Gracias por acompañarnos en nuestro gran día! Te pedimos que confirmes tu asistencia..."
           buttonText="Confirmar Asistencia"
           iconText={faCalendarCheck}
           titleModal="Confirmar Asistencia"

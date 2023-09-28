@@ -44,7 +44,7 @@ const Music = () => {
             className="music2"
           />
         </div>
-        <h4 className="text-4xl font-title ">Musica</h4>
+        <h4 className="text-4xl font-title ">Música</h4>
         <p>
           ¿Qué canciones no pueden faltar en la fiesta?
           <br />

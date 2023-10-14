@@ -3,6 +3,7 @@ import weddingData from '../../Data/OurWedding.json';
 import ButtonCustom from '../General/Buttons/ButtonCustom';
 import { handlerGoogleMaps } from '../../Functions/buttonFunctions';
 import { type TypeofCeremoni } from '../../Data/types';
+import CarouselCustom from '../General/Carousel';
 
 const Articles = () => {
   const typesWedding: TypeofCeremoni[] = weddingData.Wedding.map(
@@ -13,7 +14,7 @@ const Articles = () => {
       {typesWedding.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col gap-2 items-center justify-center"
+          className="flex flex-col gap-2 items-center justify-center w-[320px]"
         >
           <img
             src={item.image}
@@ -33,6 +34,9 @@ const Articles = () => {
             <span>{item.hours}hs</span>
             <span>{item.place}</span>
             <span>{item.city}</span>
+          </div>
+          <div className="w-full h-[200px] my-4">
+            <CarouselCustom images={item.images} />
           </div>
           <ButtonCustom
             text="Como llegar"

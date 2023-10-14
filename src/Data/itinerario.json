@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "hora": "16:30",
+            "icon": "faChurch",
+            "title": "Iglesia",
+            "color": "Comenzamos la ceremonia"
+        },
+        {
+            "hora": "18:00",
+            "icon": "faChampagneGlasses",
+            "title": "Recepcion",
+            "color": "Nos espera una hermosa recepcion en el salon"
+        },
+        {
+            "hora": "19:00",
+            "icon": "faRing",
+            "title": "Civil",
+            "color": "Damos el si!"
+        },
+        {
+            "hora": "21:30",
+            "icon": "faUtensils",
+            "title": "Cena",
+            "color": "Cenamos un espectacular menu"
+        },
+        {
+            "hora": "23:00",
+            "icon": "faMusic",
+            "title": "Fiesta",
+            "color": "Lo dejamos todo en la pista"
+        },
+        {
+            "hora": "02:00",
+            "icon": "faFlagCheckered",
+            "title": "Fin",
+            "color": "Terminamos la hermosa fiesta!!"
+        }
+    ]
+}

@@ -28,19 +28,24 @@ const CountdownTimer = () => {
           ? '¡ Ya llego el gran dia !'
           : '¡ Cada vez falta menos !'}
       </span>
-      <div className="flex tablet:gap-8  gap-1 mb-12">
+      <div className="flex tablet:gap-8 bg-button drop-shadow-xl p-2 rounded-lg gap-1 mb-8">
         {timeLeft.map((time, i) => (
-          <div
-            key={i}
-            className="countdown-item tablet:h-[200px] h-[85px] tablet:w-[200px] w-[85px]"
-          >
-            <span className="countdown-value tablet:text-5xl">
-              {time.time > 0 ? time.time : 0}
+          <>
+            <div
+              key={i}
+              className="countdown-item tablet:h-[200px] h-[65px] tablet:w-[200px] w-[75px]"
+            >
+              <span className="countdown-value tablet:text-5xl">
+                {time.time > 0 ? time.time : 0}
+              </span>
+              <span className="countdown-label text-sm tablet:text-4xl font-sans">
+                {time.title}
+              </span>
+            </div>
+            <span className="m-auto text-xl">
+              {i < timeLeft.length - 1 ? ':' : ''}
             </span>
-            <span className="countdown-label tablet:text-4xl font-body">
-              {time.title}
-            </span>
-          </div>
+          </>
         ))}
       </div>
       {timeLeft[0].time > 0 && <CalendarButton />}

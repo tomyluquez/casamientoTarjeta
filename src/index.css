@@ -48,9 +48,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid #fff6dc;
-  padding: 5px;
-  border-radius: 50%;
 }
 .countdown-value {
   font-size: 2rem;

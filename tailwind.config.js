@@ -1,19 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
     fontFamily: {
       sans: ['poppins', 'sans-serif'],
       title: ['Dancing Script', 'sans-serif'],
       body: ['Edu SA Beginner', 'sans-serif'],
-    },
-    colors: {
-      timer: '#EADBC8',
-      button: '#F8F0E5',
-      orange: '#FD8D14',
-      white: '#fafafa',
-      gray: 'gray',
-      error: 'red',
     },
     screens: {
       tablet: '640px',
@@ -25,7 +21,16 @@ export default {
       desktop: '1280px',
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        timer: '#EADBC8',
+        button: '#F8F0E5',
+        orange: '#FD8D14',
+        white: '#fafafa',
+        gray: 'gray',
+        error: 'red',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

@@ -13,7 +13,7 @@ const ImagePpal = () => {
   }, []);
   return (
     <Parallax
-      bgImage={isMobile ? './portadaUs.jpg' : 'portada.png'}
+      bgImage={'portadaUs.webp'}
       strength={300}
       bgImageStyle={{
         width: isMobile ? '350px' : 'auto',

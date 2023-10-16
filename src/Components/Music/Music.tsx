@@ -13,7 +13,7 @@ const Music = () => {
   return (
     <Parallax
       className="min-h-[600px] w-full flex justify-center items-center p-8"
-      bgImage="./fondoMusic2.jpg"
+      bgImage="./fondoMusic2.webp"
       strength={300}
       bgImageStyle={{
         width: 'auto',

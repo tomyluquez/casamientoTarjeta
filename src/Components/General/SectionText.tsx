@@ -18,7 +18,7 @@ const SectionText = ({
   };
   return (
     <section className="flex mt-12 min-h-[100px] flex-col items-center justify-center gap-4 text-center">
-      <p className="text-xl text-3xl text-center">{description}</p>
+      <p className="text-xl text-3xl text-center px-4">{description}</p>
       <FormDialog
         open={open}
         setOpen={setOpen}

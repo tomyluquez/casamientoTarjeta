@@ -18,16 +18,24 @@ body {
 
 .inputCustom {
   background-color: transparent;
-  border-bottom: 1px solid;
+  border: none !important;
+  border-bottom: 1px solid !important;
+  --tw-ring-color: transparent !important;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-shadow: 0 0 #0000;
+}
+
+.inputCustom:focus {
+  outline: none !important;
 }
 
 .inputCustom::placeholder {
-  color: #fafafa;
   opacity: 0.6;
 }
 
-.inputError:focus {
-  border-color: red;
+.inputError {
+  border-color: red !important;
   outline: none !important;
 }
 

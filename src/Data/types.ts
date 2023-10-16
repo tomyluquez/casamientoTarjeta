@@ -43,7 +43,7 @@ export interface TypeofCeremoni {
   city: string;
   image: string;
   address: string;
-  images: string[];
+  images: string;
 }
 
 export interface TypeofPhotos {

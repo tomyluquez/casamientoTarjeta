@@ -18,7 +18,7 @@ const InputText = ({
     <div className={`flex flex-col justify-center align-center text-center`}>
       <label htmlFor={name}>{label}</label>
       <input
-        className={`inputCustom ${errors && 'inputError'}`}
+        className={`inputCustom ${errors && errors[name] && 'inputError'}`}
         id={name}
         type="text"
         {...register(name, { required: true })}

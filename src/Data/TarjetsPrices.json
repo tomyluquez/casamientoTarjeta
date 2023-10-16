@@ -1,34 +1,29 @@
 {
     "adults": [
         {
-            "id": 1,
-            "month" : "Septiembre",
-            "price": 25500
-        },
-        {
             "id": 2,
             "month" : "Octubre",
-            "price": 28000
+            "price": 26500
         },
         {
             "id": 3,
             "month" : "Noviembre",
-            "price": 30500
+            "price": 29000
         },
         {
             "id": 4,
             "month" : "Diciembre",
-            "price": 33000
+            "price": 32000
         },
         {
             "id": 5,
             "month" : "Enero",
-            "price": 36500
+            "price": 35000
         },
         {
             "id": 6,
             "month" : "Febrero",
-            "price": 40000
+            "price": 39000
         }
     ],
     "kids": [

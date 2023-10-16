@@ -19,7 +19,7 @@ const CountdownTimer = () => {
   return (
     <section className="countdown-container bg-timer flex flex-col gap-8 py-12">
       <img
-        src="./icono-nuestraboda.png"
+        src="./icono-nuestraboda.webp"
         alt="anillos"
         style={{ width: '100px' }}
       />

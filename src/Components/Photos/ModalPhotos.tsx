@@ -1,14 +1,14 @@
 import { Modal } from '@mui/material';
 import { ModalProps } from '../../Data/types';
-import ourPhoto1 from '/our1.jpg';
-import ourPhoto2 from '/our2.jpg';
-import ourPhoto3 from '/our3.jpg';
-import ourPhoto4 from '/our4.jpg';
-import ourPhoto5 from '/our5.jpg';
-import ourPhoto6 from '/our6.jpg';
-import ourPhoto7 from '/our7.jpg';
-import ourPhoto8 from '/our8.jpg';
-import ourPhoto9 from '/our9.jpg';
+import ourPhoto1 from '/our1.webp';
+import ourPhoto2 from '/our2.webp';
+import ourPhoto3 from '/our3.webp';
+import ourPhoto4 from '/our4.webp';
+import ourPhoto5 from '/our5.webp';
+import ourPhoto6 from '/our6.webp';
+import ourPhoto7 from '/our7.webp';
+import ourPhoto8 from '/our8.webp';
+import ourPhoto9 from '/our9.webp';
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -3,7 +3,7 @@ const DressCode = () => {
     <div className="flex flex-col items-center gap-4 text-center">
       <img
         className="dressCode"
-        src="./dressCode.png"
+        src="./dressCode.webp"
         alt="percha dresscode"
         style={{ width: '100px' }}
       />

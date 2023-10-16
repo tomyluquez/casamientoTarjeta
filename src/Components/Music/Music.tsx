@@ -32,13 +32,13 @@ const Music = () => {
       <div className="flex flex-col text-center py-8 px-4 bg-white border-2 border-black items-center justify-center gap-4">
         <div className="flex">
           <img
-            src="./music.png"
+            src="./music.webp"
             alt=""
             style={{ width: '50px' }}
             className="music"
           />
           <img
-            src="./music.png"
+            src="./music.webp"
             alt=""
             style={{ width: '50px' }}
             className="music2"

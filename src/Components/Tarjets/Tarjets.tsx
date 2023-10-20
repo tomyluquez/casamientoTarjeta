@@ -12,7 +12,7 @@ const Tarjets = () => {
         buttonText="Ver valores"
         iconText={faEnvelopeOpenText}
         titleModal="Tarjetas de salon"
-        textModal="Te compartimos los valores y cbu: 0000003100067349638299"
+        textModal="Los pagos de la tarjeta se pueden realizar hasta el dia 15 de cada mes."
         form="tarjetPrices"
       />
       <p className="text-center text-gray text-sm">

@@ -31,7 +31,9 @@ export default function FormDialog(props: PropsDialog) {
       >
         <DialogTitle>{props.text}</DialogTitle>
         <DialogContent>
-          <DialogContentText>{props.intro}</DialogContentText>
+          <DialogContentText sx={{ textAlign: 'center' }}>
+            {props.intro}
+          </DialogContentText>
           <Forms close={handleClose} type={props.form || ''} />
         </DialogContent>
       </Dialog>

@@ -19,13 +19,13 @@
             "color": "Damos el si!"
         },
         {
-            "hora": "21:30",
+            "hora": "20:30",
             "icon": "faUtensils",
             "title": "Cena",
             "color": "Cenamos un espectacular menu"
         },
         {
-            "hora": "23:00",
+            "hora": "22:00",
             "icon": "faMusic",
             "title": "Fiesta",
             "color": "Lo dejamos todo en la pista"

@@ -6,7 +6,7 @@ const Audio = () => {
       <AudioPlayer
         autoPlay={true}
         loop={true}
-        src="./asi.mp3"
+        src="/asi.mp3"
         onPlay={(e) => console.log(e)}
         onPause={(e) => console.log(e)}
         showJumpControls={false}

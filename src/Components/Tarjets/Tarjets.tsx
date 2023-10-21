@@ -7,7 +7,7 @@ const Tarjets = () => {
     <div>
       <SectionText
         description={
-          'El regalo perfecto será tu presencia, te compartimos los valores de nuestra tarjeta.'
+          'El regalo perfecto será tu presencia. De nuestra parte hemos invitado un porcentaje del valor de la tarjeta, te pedimos que nos ayudes abonando el resto.'
         }
         buttonText="Ver valores"
         iconText={faEnvelopeOpenText}

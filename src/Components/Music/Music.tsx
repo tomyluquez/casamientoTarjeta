@@ -13,7 +13,7 @@ const Music = () => {
   return (
     <Parallax
       className="min-h-[600px] w-full flex justify-center items-center p-8"
-      bgImage="./fondoMusic2.webp"
+      bgImage="./fondoMusic.jpg"
       strength={300}
       bgImageStyle={{
         width: 'auto',
@@ -29,7 +29,7 @@ const Music = () => {
         intro="Decinos el nombre de la cancion y artista que quieras sugerir"
         form="formMusic"
       />
-      <div className="flex flex-col text-center py-8 px-4 bg-white border-2 border-black items-center justify-center gap-4">
+      <div className="flex flex-col text-center py-8 px-4 bg-[#eadbc8b1] border-2 border-black items-center justify-center gap-4">
         <div className="flex">
           <img
             src="./music.webp"
@@ -47,6 +47,7 @@ const Music = () => {
         <h4 className="text-4xl font-title ">Música</h4>
         <p>
           ¿Qué canciones no pueden faltar en la fiesta?
+          <br />
           <br />
           <b>¡Queremos verte dándolo todo en la pista!</b>
         </p>

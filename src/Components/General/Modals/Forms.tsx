@@ -5,8 +5,6 @@ import TarjetsPrices from '../../Tarjets/TarjetsPrices';
 import PresentsPrices from '../../Tarjets/PresentsPrices';
 import ButtonCustom from '../Buttons/ButtonCustom';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { confirmAssitence } from './../../../Services/confirmAssitence';
-import { createSong } from '../../../Services/createSong';
 import { useContext, useState } from 'react';
 import Loading from '../Loading';
 import { alertContext } from '../../../App';
@@ -49,6 +47,7 @@ export default function Forms({ close, type }: FormsProps) {
           nombre: data.nameLastname,
           restriccion: data.alimentation,
         }).then((res: ApiResponse) => {
+          console.log(res);
           close();
           setLoading(false);
           setOpen(true);
@@ -68,6 +67,7 @@ export default function Forms({ close, type }: FormsProps) {
       // })
       try {
         setCancion({ nombre: data.music }).then((res: ApiResponse) => {
+          console.log(res);
           close();
           setLoading(false);
           setOpen(true);

@@ -1,7 +1,7 @@
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import asi from '/asi.mp3';
 const Audio = () => {
+  const asi = `${window.location.origin}/asi.mp3`;
   return (
     <div>
       <AudioPlayer

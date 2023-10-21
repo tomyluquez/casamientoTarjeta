@@ -9,8 +9,8 @@
         {
             "hora": "18:00",
             "icon": "faChampagneGlasses",
-            "title": "Recepcion",
-            "color": "Nos espera una hermosa recepcion en el salon"
+            "title": "Recepción",
+            "color": "Nos espera una hermosa recepción en el salón"
         },
         {
             "hora": "19:00",
@@ -22,7 +22,7 @@
             "hora": "20:30",
             "icon": "faUtensils",
             "title": "Cena",
-            "color": "Cenamos un espectacular menu"
+            "color": "Cenamos un espectacular menú"
         },
         {
             "hora": "22:00",
@@ -34,7 +34,7 @@
             "hora": "02:00",
             "icon": "faFlagCheckered",
             "title": "Fin",
-            "color": "Terminamos la hermosa fiesta!!"
+            "color": "Terminamos una hermosa fiesta!!"
         }
     ]
 }

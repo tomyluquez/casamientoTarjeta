@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { createContext, useState } from 'react';
 import Success from './Components/General/Success';
+import Audio from './Components/Music/Audio';
 
 const theme = createTheme({
   palette: {
@@ -39,6 +40,7 @@ function App() {
         <Success />
         <ImagePpal />
         <CountdownTimer />
+        <Audio />
         <DateMain />
         <ConfirmAssistance />
         <Music />

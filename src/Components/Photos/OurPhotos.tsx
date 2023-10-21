@@ -8,7 +8,7 @@ const OurPhotos = () => {
   return (
     <div className="flex flex-col gap-12 items-center justify-center py-12">
       <h2 className="text-2xl text-center border-t-2 border-b-2">NOSOTROS</h2>
-      <div className="w-full h-[250px]">
+      <div className="w-full h-[500px]">
         <CarouselCustom images={ourPhotosJson.data} />
       </div>
       <ModalPhotos open={open} setOpen={setOpen} />

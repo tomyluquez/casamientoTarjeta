@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { calculateTimeLeft } from '../../../Functions/calculateTimeLeft';
 import CalendarButton from './CalendarButton';
 
@@ -30,11 +30,8 @@ const CountdownTimer = () => {
       </span>
       <div className="flex tablet:gap-8 bg-button drop-shadow-xl p-2 rounded-lg gap-1 mb-8">
         {timeLeft.map((time, i) => (
-          <>
-            <div
-              key={i}
-              className="countdown-item tablet:h-[200px] h-[65px] tablet:w-[200px] w-[75px]"
-            >
+          <React.Fragment key={i}>
+            <div className="countdown-item tablet:h-[200px] h-[65px] tablet:w-[200px] w-[75px]">
               <span className="countdown-value tablet:text-5xl">
                 {time.time > 0 ? time.time : 0}
               </span>
@@ -45,7 +42,7 @@ const CountdownTimer = () => {
             <span className="m-auto text-xl">
               {i < timeLeft.length - 1 ? ':' : ''}
             </span>
-          </>
+          </React.Fragment>
         ))}
       </div>
       {timeLeft[0].time > 0 && <CalendarButton />}

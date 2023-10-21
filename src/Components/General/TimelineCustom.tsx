@@ -28,8 +28,8 @@ export default function TimelineCustom({
       className="mt-24 mb-4 bg-button w-[90%] m-auto rounded-xl"
     >
       <span className="m-auto mb-4 text-2xl">Esquema de la boda</span>
-      {itinerario.map((item: any) => (
-        <TimelineItem>
+      {itinerario.map((item: any, i: number) => (
+        <TimelineItem key={i}>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
             align="right"

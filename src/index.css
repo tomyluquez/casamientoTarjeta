@@ -151,3 +151,24 @@ body {
   top: -100%;
   transition: all 0.3s ease-in-out;
 }
+
+.rhap_main-controls-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+  color: #9a4444 !important;
+}
+
+.rhap_volume-indicator,
+.rhap_progress-indicator,
+.rhap_progress-filled {
+  background-color: #9a4444 !important;
+}
+
+.rhap_download-progress {
+  background-color: #a27f7f !important;
+}
+
+.rhap_volume-bar,
+.rhap_progress-bar-show-download {
+  background-color: #a06363 !important;
+}

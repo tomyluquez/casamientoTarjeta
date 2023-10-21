@@ -15,13 +15,13 @@ const Tarjets = () => {
         textModal="Los pagos de la tarjeta se pueden realizar hasta el dia 15 de cada mes."
         form="tarjetPrices"
       />
-      <p className="text-center text-gray text-sm">
+      <div className="text-center text-gray text-sm">
         <Cbu
           titular="Tomas Luquez"
-          alias="tluquez"
+          alias="t.luquez"
           cbu="0000076500000007339813"
         />
-      </p>
+      </div>
     </div>
   );
 };

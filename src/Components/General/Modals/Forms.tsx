@@ -10,6 +10,7 @@ import { createSong } from '../../../Services/createSong';
 import { useContext, useState } from 'react';
 import Loading from '../Loading';
 import { alertContext } from '../../../App';
+import { setCancion, setInvitado } from '../../../Firebase/setInvitados';
 
 type Inputs = {
   example: string;
@@ -39,44 +40,45 @@ export default function Forms({ close, type }: FormsProps) {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     setLoading(true);
     if (data.nameLastname) {
-      confirmAssitence({
-        nombreInvitado: data.nameLastname,
-        restricciones: data.alimentation,
-      })
-        .then((res: ApiResponse) => {
-          if (res.status === 200) {
-            close();
-            setLoading(false);
-            setOpen(true);
-            setText('Que bueno que puedas asisitir ! ahi nos vemos');
-          }
-        })
-        .catch(() => {
+      // confirmAssitence({
+      //   nombreInvitado: data.nameLastname,
+      //   restricciones: data.alimentation,
+      // })
+      try {
+        setInvitado({
+          nombre: data.nameLastname,
+          restriccion: data.alimentation,
+        }).then((res: ApiResponse) => {
           close();
           setLoading(false);
           setOpen(true);
-          setText('Algo salio mal !, por favor intenta nuevamente');
+          setText('Que bueno que puedas asisitir ! ahi nos vemos');
         });
+      } catch (error) {
+        close();
+        setLoading(false);
+        setOpen(true);
+        setText('Algo salio mal !, por favor intenta nuevamente');
+      }
     }
 
     if (data.music) {
-      createSong({
-        nameSong: data.music,
-      })
-        .then((res: ApiResponse) => {
-          if (res.status === 200) {
-            close();
-            setLoading(false);
-            setOpen(true);
-            setText('Gracias por recomendarnos la cancion !');
-          }
-        })
-        .catch(() => {
+      // createSong({
+      //   nameSong: data.music,
+      // })
+      try {
+        setCancion({ nombre: data.music }).then((res: ApiResponse) => {
           close();
           setLoading(false);
           setOpen(true);
-          setText('Algo salio mal !, por favor intenta nuevamente');
+          setText('Gracias por recomendarnos la cancion !');
         });
+      } catch (error) {
+        close();
+        setLoading(false);
+        setOpen(true);
+        setText('Algo salio mal !, por favor intenta nuevamente');
+      }
     }
   };
 

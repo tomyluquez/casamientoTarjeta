@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { createContext, useState } from 'react';
 import Success from './Components/General/Success';
 import Audio from './Components/Music/Audio';
+import Audios from './Components/Music/Audios';
 
 const theme = createTheme({
   palette: {
@@ -40,7 +41,8 @@ function App() {
         <Success />
         <ImagePpal />
         <CountdownTimer />
-        <Audio />
+        {/* <Audio /> */}
+        <Audios />
         <DateMain />
         <ConfirmAssistance />
         <Music />

@@ -172,3 +172,16 @@ body {
 .rhap_progress-bar-show-download {
   background-color: #a06363 !important;
 }
+
+.audio-player {
+  padding: 10px;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: #eadbc8;
+  color: #fff !important;
+}

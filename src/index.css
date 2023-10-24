@@ -185,3 +185,21 @@ body {
   background-color: #eadbc8;
   color: #fff !important;
 }
+
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .audio-player audio::-webkit-media-controls-panel {
+      background-color: #eadbc8;
+      color: #fff !important;
+    }
+
+    .audio-player audio::-webkit-media-controls-current-time-display,
+    .audio-player audio::-webkit-media-controls-time-remaining-display {
+      display: none;
+    }
+  }
+}

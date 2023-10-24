@@ -4,9 +4,10 @@ const AudioPlayer = () => {
   return (
     <>
       <div className="flex items-center justify-center my-4 audio-player">
-        <audio controls preload="none">
-          <source src="./asi.mp3" type="audio/mpeg" />
-          Your browser does not support the <code>audio</code> element.
+        <audio controls>
+          <source src="./asi.mp4" />
+          <source src="./asi.mp3" />
+          Tu navegador no soporta este tipo de <code>audio</code>.
         </audio>
       </div>
       <Divider className="w-full" />

@@ -4,7 +4,7 @@ const AudioPlayer = () => {
   return (
     <>
       <div className="flex items-center justify-center my-4 audio-player">
-        <audio controls autoPlay>
+        <audio controls>
           <source src="./asi.mp3" type="audio/mpeg" />
         </audio>
       </div>

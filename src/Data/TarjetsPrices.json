@@ -3,22 +3,22 @@
         {
             "id": 3,
             "month" : "Noviembre",
-            "price": 29000
+            "price": 28000
         },
         {
             "id": 4,
             "month" : "Diciembre",
-            "price": 32000
+            "price": 31000
         },
         {
             "id": 5,
             "month" : "Enero",
-            "price": 35000
+            "price": 34000
         },
         {
             "id": 6,
             "month" : "Febrero",
-            "price": 39000
+            "price": 38000
         }
     ],
     "kids": [

@@ -3,22 +3,26 @@
         {
             "id": 3,
             "month" : "Noviembre",
-            "price": 28000
+            "price": 28000,
+            "date": "2023-11-16"
         },
         {
             "id": 4,
             "month" : "Diciembre",
-            "price": 31000
+            "price": 31000,
+            "date": "2023-12-16"
         },
         {
             "id": 5,
             "month" : "Enero",
-            "price": 34000
+            "price": 34000,
+            "date": "2024-01-16"
         },
         {
             "id": 6,
             "month" : "Febrero",
-            "price": 38000
+            "price": 38000,
+            "date": "2024-02-16"    
         }
     ],
     "kids": [

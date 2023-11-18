@@ -2,15 +2,22 @@
 import TarjetsPricesService from '../../Data/TarjetsPrices.json';
 
 const TarjetsPrices = () => {
+  const date = new Date();
+
   return (
     <div className="flex flex-col gap-4">
       <div>
         <strong>Valor de la tarjeta Adultos:</strong>
-        {TarjetsPricesService.adults.map((tarjets) => (
-          <p key={tarjets.id}>
-            {tarjets.month}: ${tarjets.price}
-          </p>
-        ))}
+        {TarjetsPricesService.adults.map((tarjet) => {
+          const tarjetDate = new Date(tarjet.date);
+          const isPastDate = tarjetDate < date;
+
+          return (
+            <p key={tarjet.id}>
+              {!isPastDate && `${tarjet.month} : $${tarjet.price}`}
+            </p>
+          );
+        })}
       </div>
       <div>
         <strong>
